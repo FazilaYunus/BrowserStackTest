@@ -17,10 +17,11 @@ public class AppTest {
         //capability.setCapability("browserstack.local", true);
 
         WebDriver driver = new RemoteWebDriver(
-                new URL("http://localhost:4444/wd/hub"), capability
+                new URL("https://rmptest1:TjMWeK8SxPWszN8gJacu@hub-cloud.browserstack.com/wd/hub"),
+                capability
         );
 
-        driver.get("https://www.google.co.uk/");
+        driver.get("http://proteustest.national.core.bbc.co.uk");
 
         System.out.println(driver.getTitle());
 
