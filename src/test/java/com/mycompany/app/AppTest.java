@@ -13,7 +13,7 @@ public class AppTest {
 
     @Test
     public void myTest() throws MalformedURLException {
-        DesiredCapabilities capability = DesiredCapabilities.chrome();
+        DesiredCapabilities capability = DesiredCapabilities.firefox();
         //capability.setCapability("browserstack.local", true);
 
         WebDriver driver = new RemoteWebDriver(
