@@ -13,13 +13,7 @@ public class AppTest {
 
     @Test
     public void myTest() throws MalformedURLException {
-        DesiredCapabilities capability = DesiredCapabilities.firefox();
-        //capability.setCapability("browserstack.local", true);
-
-        WebDriver driver = new RemoteWebDriver(
-                new URL("https://rmptest1:TjMWeK8SxPWszN8gJacu@hub-cloud.browserstack.com/wd/hub"),
-                capability
-        );
+        DesiredCapabilities capability = DesiredCapabilities.chrome();
 
         driver.get("http://proteustest.national.core.bbc.co.uk");
 
